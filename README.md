@@ -1,4 +1,4 @@
-# Node Generator [![Build Status](https://secure.travis-ci.org/chrisenytc/slush-node.png?branch=master)](https://travis-ci.org/chrisenytc/slush-node) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-node.png)](http://badges.enytc.com/for/npm/slush-node) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chrisenytc/slush-node/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+# Slush Node [![Build Status](https://secure.travis-ci.org/chrisenytc/slush-node.png?branch=master)](https://travis-ci.org/chrisenytc/slush-node) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-node.png)](http://badges.enytc.com/for/npm/slush-node) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chrisenytc/slush-node/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 > A [slush](http://klei.github.io/slush) generator for Node.js.
 

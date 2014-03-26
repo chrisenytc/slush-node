@@ -2,7 +2,7 @@
  * slush-node
  * https://github.com/chrisenytc/slush-node
  *
- * Copyright (c) 2014 Christopher EnyTC
+ * Copyright (c) 2014, Christopher EnyTC
  * Licensed under the MIT license.
  */
 
@@ -57,6 +57,7 @@ gulp.task('default', function(done) {
             answers.appNameSlug = _.slugify(answers.appName)
             var d = new Date();
             answers.year = d.getFullYear();
+            answers.date = d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate();
             var files = [__dirname + '/templates/**'];
             if (answers.license === 'MIT') {
                 files.push('!' + __dirname + '/templates/LICENSE_BSD');

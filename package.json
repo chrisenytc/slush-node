@@ -1,6 +1,6 @@
 {
     "name": "slush-node",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "A slush generator for Node.js",
     "keywords": [
         "slushgenerator",
