@@ -2,7 +2,7 @@
  * slush-node
  * https://github.com/chrisenytc/slush-node
  *
- * Copyright (c) 2014, Christopher EnyTC
+ * Copyright (c) 2015, Christopher EnyTC
  * Licensed under the MIT license.
  */
 
@@ -14,12 +14,47 @@ var gulp = require('gulp'),
     template = require('gulp-template'),
     rename = require('gulp-rename'),
     _ = require('underscore.string'),
-    inquirer = require('inquirer');
+    inquirer = require('inquirer'),
+    path = require('path');
+
+function format(string) {
+    var username = string.toLowerCase();
+    return username.replace(/\s/g, '');
+}
+
+
+var defaults = (function() {
+    var workingDirName = path.basename(process.cwd()),
+        homeDir, osUserName, configFile, user;
+
+    if (process.platform === 'win32') {
+        homeDir = process.env.USERPROFILE;
+        osUserName = process.env.USERNAME || path.basename(homeDir).toLowerCase();
+    } else {
+        homeDir = process.env.HOME || process.env.HOMEPATH;
+        osUserName = homeDir && homeDir.split('/').pop() || 'root';
+    }
+
+    configFile = path.join(homeDir, '.gitconfig');
+    user = {};
+
+    if (require('fs').existsSync(configFile)) {
+        user = require('iniparser').parseSync(configFile).user;
+    }
+
+    return {
+        appName: workingDirName,
+        userName: osUserName || format(user.name || ''),
+        authorName: user.name || '',
+        authorEmail: user.email || ''
+    };
+})();
 
 gulp.task('default', function(done) {
     var prompts = [{
         name: 'appName',
-        message: 'What the module name?'
+        message: 'What the module name?',
+        default: defaults.appName
     }, {
         name: 'appDescription',
         message: 'What the description?'
@@ -30,12 +65,15 @@ gulp.task('default', function(done) {
     }, {
         name: 'authorName',
         message: 'What the author name?',
+        default: defaults.authorName
     }, {
         name: 'authorEmail',
         message: 'What the author email?',
+        default: defaults.authorEmail
     }, {
         name: 'userName',
         message: 'What the github username?',
+        default: defaults.userName
     }, {
         type: 'list',
         name: 'license',
@@ -54,10 +92,11 @@ gulp.task('default', function(done) {
             if (!answers.appName) {
                 return done();
             }
-            answers.appNameSlug = _.slugify(answers.appName)
+            answers.appNameSlug = _.slugify('Slush ' + answers.appName);
+            answers.appNameOnly = _.capitalize(answers.appNameSlug.replace('slush-', ''));
             var d = new Date();
             answers.year = d.getFullYear();
-            answers.date = d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate();
+            answers.date = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
             var files = [__dirname + '/templates/**'];
             if (answers.license === 'MIT') {
                 files.push('!' + __dirname + '/templates/LICENSE_BSD');

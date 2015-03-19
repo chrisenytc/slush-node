@@ -1,4 +1,4 @@
-# <%= appName %> [![Build Status](https://secure.travis-ci.org/<%= userName %>/<%= appNameSlug %>.png?branch=master)](http://travis-ci.org/<%= userName %>/<%= appNameSlug %>) [![NPM version](https://badge-me.herokuapp.com/api/npm/<%= appNameSlug %>.png)](http://badges.enytc.com/for/npm/<%= appNameSlug %>) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/<%= userName %>/<%= appNameSlug %>/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+# <%= appNameOnly %> [![Build Status](https://secure.travis-ci.org/<%= userName %>/<%= appNameSlug %>.png?branch=master)](http://travis-ci.org/<%= userName %>/<%= appNameSlug %>) [![NPM version](https://badge-me.herokuapp.com/api/npm/<%= appNameSlug %>.png)](http://badges.enytc.com/for/npm/<%= appNameSlug %>)
 
 > <%= appDescription %>
 
@@ -28,7 +28,7 @@ How to use this method
 
 ## Contributing
 
-Please submit all issues and pull requests to the [<%= userName %>/<%= appNameSlug %>](http://github.com/<%= userName %>/<%= appNameSlug %>) repository!
+Please submit all issues and pull requests to the [<%= userName %>/<%= appNameSlug %>](https://github.com/<%= userName %>/<%= appNameSlug %>) repository!
 
 ## Support
 If you have any problem or suggestion please open an issue [here](https://github.com/<%= userName %>/<%= appNameSlug %>/issues).

@@ -1,13 +1,7 @@
 {
     "name": "slush-node",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "description": "A slush generator for Node.js",
-    "keywords": [
-        "slushgenerator",
-        "node",
-        "npm",
-        "module"
-    ],
     "homepage": "https://github.com/chrisenytc/slush-node",
     "bugs": "https://github.com/chrisenytc/slush-node/issues",
     "author": {
@@ -24,6 +18,10 @@
         "url": "git://github.com/chrisenytc/slush-node.git"
     },
     "main": "slushfile.js",
+    "engines": {
+        "node": ">=0.10.26",
+        "npm": ">=1.4.3"
+    },
     "scripts": {
         "test": "make test"
     },
@@ -34,14 +32,17 @@
         "gulp-conflict": "~0.1.1",
         "gulp-rename": "~1.2.0",
         "underscore.string": "~2.3.3",
-        "inquirer": "~0.4.1"
+        "inquirer": "~0.4.1",
+        "iniparser": "~1.0.5"
     },
     "devDependencies": {
         "mocha": "~1.14.0",
         "chai": "~1.8.0"
     },
-    "engines": {
-        "node": ">=0.10.26",
-        "npm": ">=1.4.3"
-    }
+    "keywords": [
+        "slushgenerator",
+        "node",
+        "npm",
+        "module"
+    ]
 }

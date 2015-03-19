@@ -1,6 +1,6 @@
-# Slush Node [![Build Status](https://secure.travis-ci.org/chrisenytc/slush-node.png?branch=master)](https://travis-ci.org/chrisenytc/slush-node) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-node.png)](http://badges.enytc.com/for/npm/slush-node) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chrisenytc/slush-node/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+# Slush Node [![Build Status](https://secure.travis-ci.org/chrisenytc/slush-node.png?branch=master)](https://travis-ci.org/chrisenytc/slush-node) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-node.png)](http://badges.enytc.com/for/npm/slush-node)
 
-> A [slush](http://klei.github.io/slush) generator for Node.js.
+> A [slush](http://slushjs.github.io) generator for Node.js.
 
 
 ## Getting Started
@@ -39,7 +39,7 @@ Slush is a tool to be able to use Gulp for project scaffolding.
 
 Slush does not contain anything "out of the box", except the ability to locate installed slush generators and to run them with liftoff.
 
-To be able to provide functionality like Yeoman, see: [Yeoman like behavior below.](https://github.com/klei/slush#yeoman-like-behavior)
+To be able to provide functionality like Yeoman, see: [Yeoman like behavior below.](https://github.com/slushjs/slush#yeoman-like-behavior)
 
 ## Contributing
 
@@ -52,7 +52,7 @@ If you have any problem or suggestion please open an issue [here](https://github
 
 The MIT license
 
-Copyright (c) 2014, Christopher EnyTC
+Copyright (c) 2015, Christopher EnyTC
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
