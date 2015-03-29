@@ -92,8 +92,8 @@ gulp.task('default', function(done) {
             if (!answers.appName) {
                 return done();
             }
-            answers.appNameSlug = _.slugify('Slush ' + answers.appName);
-            answers.appNameOnly = _.capitalize(answers.appNameSlug.replace('slush-', ''));
+            answers.appNameSlug = _.slugify(answers.appName);
+            answers.appNameOnly = _.capitalize(answers.appNameSlug);
             var d = new Date();
             answers.year = d.getFullYear();
             answers.date = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();

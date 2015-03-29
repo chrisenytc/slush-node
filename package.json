@@ -1,6 +1,6 @@
 {
     "name": "slush-node",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "A slush generator for Node.js",
     "homepage": "https://github.com/chrisenytc/slush-node",
     "bugs": "https://github.com/chrisenytc/slush-node/issues",

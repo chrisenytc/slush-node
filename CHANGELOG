@@ -1,3 +1,7 @@
+v0.2.1:
+  date: 2015-3-29
+  changes:
+    - Fix error in template variables
 v0.2.0:
   date: 2015-3-19
   changes:
