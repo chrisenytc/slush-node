@@ -25,11 +25,11 @@
       "<%= appNameSlug %>": "bin/<%= appNameSlug %>.js"
   },<% } %>
   "engines": {
-      "node": ">= 0.10.36",
-      "npm": ">=1.4.28"
+    "node": "6.x",
+    "npm": "3.x"
   },
   "scripts": {
-    "test": "make test"
+    "test": "mocha --recursive test"
   },
   "dependencies": {},
   "devDependencies": {
