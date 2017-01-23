@@ -20,10 +20,7 @@
       "url": "https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/LICENSE"
     }
   ],
-  "main": "lib/<%= appNameSlug %>",<% if (enableBin) { %>
-  "bin": {
-      "<%= appNameSlug %>": "bin/<%= appNameSlug %>.js"
-  },<% } %>
+  "main": "index.js",
   "engines": {
     "node": "6.x",
     "npm": "3.x"
