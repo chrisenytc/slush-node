@@ -23,7 +23,7 @@
         "npm": ">=1.4.3"
     },
     "scripts": {
-        "test": "make test"
+        "test": "mocha --recursive test"
     },
     "dependencies": {
         "gulp": "~3.5.6",

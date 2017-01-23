@@ -61,7 +61,7 @@ gulp.task('default', function(done) {
     }, {
         name: 'appVersion',
         message: 'What the module version?',
-        default: '0.1.0'
+        default: '1.0.0'
     }, {
         name: 'authorName',
         message: 'What the author name?',
@@ -78,8 +78,8 @@ gulp.task('default', function(done) {
         type: 'list',
         name: 'license',
         message: 'Choose your license type',
-        choices: ['MIT', 'BSD'],
-        default: 'MIT'
+        choices: ['MIT', 'BSD', 'UNLICENSED'],
+        default: 'UNLICENSED'
     }, {
         type: 'confirm',
         name: 'enableBin',
